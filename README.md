@@ -1,3 +1,5 @@
+[![Android Gems](http://www.android-gems.com/badge/chenupt/DragTopLayout.svg?branch=master)](http://www.android-gems.com/lib/chenupt/DragTopLayout)
+
 DragTopLayout
 ---
 ![icon](https://raw.githubusercontent.com/chenupt/DragTopLayout/master/imgs/icon.png)
@@ -7,7 +9,7 @@ Sometimes we need to show a top view above a ViewPager or ListView. DragTopLayou
 
 
 
-The sample app: [click me](https://github.com/chenupt/DragTopLayout/raw/master/imgs/sample-debug-1.1.0.apk)
+The sample app: [click me](https://github.com/chenupt/DragTopLayout/raw/master/imgs/sample-debug-1.2.1.apk)
 
 Here is a show case: 
 
@@ -19,9 +21,10 @@ Add the dependency to your build.gradle.
 
 ```
 dependencies {
-    compile 'com.github.chenupt.android:dragtoplayout:1.0.2@aar'
+    compile 'com.github.chenupt.android:dragtoplayout:1.2.1@aar'
 }
 ```
+
 Add the DragTopLayout in your layout.
 
 ```xml
@@ -48,18 +51,22 @@ Add the DragTopLayout in your layout.
 
  </github.chenupt.dragtoplayout.DragTopLayout>
 ```
-Init the DragTopLayout in your activity code.
-```java
-DragTopLayout.from(this)
-        .open()
-        .listener(new DragTopLayout.SimplePanelListener() {
-        ...
-        }).setup(dragLayout);
-```
+
 [XML Attributes](https://github.com/chenupt/DragTopLayout/blob/dev/library/src/main/res/values/attrs.xml)
 
 Changelog
 ---
+###v1.2.1
+ * Fixed [#12](https://github.com/chenupt/DragTopLayout/issues/12)
+ * Fixed [#20](https://github.com/chenupt/DragTopLayout/issues/20)
+ * Support [PullToRefresh](https://github.com/chenupt/DragTopLayout/blob/master/sample%2Fsrc%2Fmain%2Fjava%2Fgithub%2Fchenupt%2Fdragtoplayout%2Fdemo%2Fpulltorefresh%2FPullToRefreshTopLayout.java)
+
+###v1.2.0
+ * Support Scrolling continue [#7](https://github.com/chenupt/DragTopLayout/pull/7).@sockeqwe
+ * Retain state [#8](https://github.com/chenupt/DragTopLayout/pull/8).@sockeqwe
+ * Fixed [#10](https://github.com/chenupt/DragTopLayout/issues/10), [#5](https://github.com/chenupt/DragTopLayout/issues/5), [#4](https://github.com/chenupt/DragTopLayout/issues/4).
+ * Remove wizard.
+
 ###v1.1.0
  * Support [collapse offset](https://github.com/chenupt/DragTopLayout/issues/2).
  * Support drag down while attaching top view.
@@ -70,7 +77,8 @@ Changelog
 
 Developed By
 ---
- * Chenupt - <chenupt@outlook.com> 
+ * Chenupt - <chenupt@outlook.com>
+ * G+ [chenupt](https://plus.google.com/u/0/109194013506774756478)
  * 微博：[chenupt](http://weibo.com/p/1005052159173535/home)
  * QQ：753785666
 
